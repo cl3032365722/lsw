@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=320, minimum-scale=1, maximum-scale=5, user-scalable=0">
+    <title>湖北联通国庆赢好礼</title>
+    <link rel="stylesheet" href="./static/css/page.css">
+    <link rel="stylesheet" href="./static/css/game.css">
+    <script src="static/js/zepto.min.js"></script>
+</head>
+<body>
+<form>
+<div class="load-img">
+    <span class="spinner-loader">Loading&#8230;</span>
+</div>
+
+<div id="wrap">
+
+    <div class="intro">
+        <span class="sound"></span>
+        <!--<div class="logo"><img src="./static/img/logo.png"></div>
+        <div class="visual"><img src="./static/img/visual.png"></div>-->
+        <ul class="btn-list">
+            <li><img src="./static/img/btn01.png" class="goBtn"></li>
+            <li><img src="./static/img/btn02.png"></li>
+        </ul>
+        <div class="roleBox">
+            <div class="role"><img src="./static/img/rolePop.png"></div>
+            <div class="startBtn"><img src="./static/img/btn03.png" class="goBtn"></div>
+        </div>
+    </div>
+
+    <div id="container">
+            <div id="gamepanel">
+
+                <div class="gameTop">
+                    <span class="sound"></span>
+                    <div class="times-wrap">
+                        时间: <span id="times"></span>
+                    </div>
+                    <div class="score-wrap">
+                        积分: <span id="score">0</span>
+                    </div>
+                </div>
+
+                <canvas id="stage" width="320" height="568"></canvas>
+            </div>
+
+
+            <div id="resultPanel">
+                <!--<div class="oImg"><img src="./static/img/overImg.png"></div>-->
+                <div class="againBtn playagain">再来一次</div>
+                <div class="scoreInfo">您本轮分数为<span id="last-score">888</span>分<br>获得幸运大转盘抽奖机会！</div>
+                <div class="formBox">
+                    <h3>请留下大名，点击提交</h3>
+                    <h2>立即进行抽奖~</h2>
+                    <ul>
+                        <li><input type="text" placeholder="姓 名"></li>
+                        <li><input type="text" placeholder="电 话"></li>
+                    </ul>
+                </div>
+                <ul class="btn-list">
+                    <li><a href="http://wap.10010hb.net/weixin/activity/rewardWeekly/index.html"><img src="./static/img/btn04.png"></a></li>
+                    <li><img src="./static/img/btn05.png" class="share"></li>
+                </ul>
+            </div>
+        </div>
+
+    <audio type="audio/mpeg" id="music" autoplay loop></audio>
+</div>
+<div class="weixin-share"></div>
+</form>
+<script src="static/js/game.js"></script>
+</body>
+</html>
